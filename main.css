@@ -64,7 +64,7 @@ img {
   position: relative;
 }
 
-.form .error-msg {
+.form .alert {
   position: absolute;
   left: 1.5rem;
   bottom: -1.25rem;
@@ -73,16 +73,16 @@ img {
   font-style: italic;
 }
 
-.form .error-msg .alert[data-state="error"] {
+.form .alert .error-msg[data-state="error"] {
   color: #ff5263;
 }
 
-.form .error-msg .alert[data-state="success"] {
+.form .alert .error-msg[data-state="success"] {
   color: #38b74e;
 }
 
 @media screen and (max-width: 550px) {
-  .form .error-msg {
+  .form .alert {
     position: static;
     left: auto;
     bottom: auto;
@@ -101,6 +101,15 @@ img {
   border-radius: 1.5rem;
   border: none;
   outline: none;
+}
+
+@media screen and (max-width: 550px) {
+  .form input,
+  .form button {
+    font-size: 0.85rem;
+    padding: 0.9375rem 1.5rem;
+    border-radius: 2.25rem;
+  }
 }
 
 .form input {
@@ -133,7 +142,7 @@ img {
 
 @media screen and (max-width: 550px) {
   .form button {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 0;
   }
 }

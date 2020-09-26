@@ -26,8 +26,8 @@
       <label for="email">Email</label>
       <input type="email" name="email" id="email" autocapitalize="none" autocomplete="off" autocorrect="off" required
       pattern="[^@]+@[^\.]+\..+" placeholder="Your email address...">
-      <div class="error-msg"></div>
-      <button type="submit">Notify Me</button>
+      <div aria-atomic="true" role="alert" class="alert"></div>
+      <button type="submit" id="main-button">Notify Me</button>
     </form>
 
     <div class="dashboard-img">

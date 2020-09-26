@@ -5,14 +5,15 @@ const renderAlert = (state = "error") => {
   };
 
   return `
-  <p class="alert" data-state="${state}">${messages[state]}</p>
+  <p class="error-msg" data-state="${state}">${messages[state]}</p>
   `;
 };
 
 const init = () => {
   const emailElement = document.querySelector("#email");
+  const buttonElement = document.querySelector("#main-button");
   const formElement = document.querySelector("#form");
-  const errorMsg = document.querySelector(".error-msg");
+  const alertElement = document.querySelector('[role="alert"]');
   const validationRegex = new RegExp(
     emailElement.getAttribute("pattern") || "[^@]+@[^.]+..+",
     "i",
@@ -23,18 +24,17 @@ const init = () => {
   formElement.setAttribute("novalidate", "");
 
   formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     if (!validationRegex.test(emailElement.value.trim())) {
-      errorMsg.innerHTML = renderAlert("error");
+      event.preventDefault();
+      alertElement.innerHTML = renderAlert("error");
       emailElement.classList.add("error");
       emailElement.setAttribute("aria-invalid", "true");
       return;
     }
-
-    formElement.parentElement.removeChild(emailElement);
-    errorMsg.innerHTML = renderAlert("success");
+    formElement.removeChild(emailElement);
+    formElement.removeChild(buttonElement);
+    alertElement.innerHTML = renderAlert("success");
+    event.preventDefault();
   });
 };
-
 init();

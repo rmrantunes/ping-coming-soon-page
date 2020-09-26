@@ -58,7 +58,7 @@ img {
   margin-bottom: 3.5rem;
   position: relative;
 
-  .error-msg{
+  .alert{
     position: absolute;
     left: $padding * 2;
     bottom: -1.25rem;
@@ -67,11 +67,11 @@ img {
     font-weight: 600;
     font-style: italic;
 
-    .alert[data-state="error"] {
+    .error-msg[data-state="error"] {
       color: $light-red;
     }
 
-    .alert[data-state="success"] {
+    .error-msg[data-state="success"] {
       color: $light-green;
     }
 
@@ -95,6 +95,12 @@ img {
     border-radius: $padding * 2;
     border: none;
     outline: none;
+
+    @include mobile {
+      font-size: 0.85rem;
+      padding: $padding * 1.25 $padding * 2;
+      border-radius: $padding * 3;
+    }
   }
 
   input {
@@ -125,7 +131,7 @@ img {
     }
 
     @include mobile {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       margin-left: 0;
     }
   }
