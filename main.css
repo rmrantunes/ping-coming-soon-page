@@ -81,7 +81,7 @@ img {
   color: #38b74e;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   .form .alert {
     position: static;
     left: auto;
@@ -103,7 +103,7 @@ img {
   outline: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   .form input,
   .form button {
     font-size: 0.85rem;
@@ -140,14 +140,14 @@ img {
   background-color: #7096f5;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   .form button {
     margin-top: 0.5rem;
     margin-left: 0;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   .form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
