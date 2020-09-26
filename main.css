@@ -64,7 +64,7 @@ img {
   position: relative;
 }
 
-.form .alert {
+.form div.alert {
   position: absolute;
   left: 1.5rem;
   bottom: -1.25rem;
@@ -73,16 +73,16 @@ img {
   font-style: italic;
 }
 
-.form .alert .error-msg[data-state="error"] {
+.form div.alert .error-msg[data-state="error"] {
   color: #ff5263;
 }
 
-.form .alert .error-msg[data-state="success"] {
+.form div.alert .error-msg[data-state="success"] {
   color: #38b74e;
 }
 
 @media screen and (max-width: 576px) {
-  .form .alert {
+  .form div.alert {
     position: static;
     left: auto;
     bottom: auto;
