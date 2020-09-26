@@ -1,0 +1,130 @@
+// Typography
+:root {
+  font-size: 20px;
+}
+
+@import "variables";
+@import "mixins";
+
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 20px;
+}
+
+// Estilos da página
+.logo {
+  @include flex-center;
+  margin-bottom: 3rem;
+}
+
+.titles {
+  text-align: center;
+
+  h1 {
+    font-weight: 300;
+    color: $gray;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+
+    span {
+      font-weight: 700;
+      color: $very-dark-blue;
+    }
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: $very-dark-blue;
+  }
+}
+
+.form {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+
+  label[for="email"] {
+    display: none;
+  }
+
+  input,
+  button {
+    padding: $padding $padding * 2;
+    border-radius: $padding * 2;
+    border: none;
+    outline: none;
+  }
+
+  input {
+    flex: auto;
+    border: 1px solid $gray-transparent;
+    color: $gray;
+  }
+
+  button {
+    background-color: $blue;
+    color: $white;
+    font-weight: 600;
+
+    margin-left: 1rem;
+    padding-left: $padding * 3.5;
+    padding-right: $padding * 3.5;
+
+    cursor: pointer;
+
+    box-shadow: 0px 5px 7px 0 transparentize($blue, 0.5);
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+
+    @include mobile {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  margin-top: 4rem;
+  @include flex-center;
+  flex-direction: column;
+  
+  .social {
+    display: flex;
+
+    & > a {
+      border-radius: 50%;
+      border: 1px solid $gray-transparent;
+      padding: $padding / 2;
+    }
+
+    a + a {
+      margin-left: 1rem;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    color: $gray-transparent;
+  }
+}

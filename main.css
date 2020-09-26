@@ -1,1 +1,156 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+:root {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.titles {
+  text-align: center;
+}
+
+.titles h1 {
+  font-weight: 300;
+  color: #969696;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.titles h1 span {
+  font-weight: 700;
+  color: #151f29;
+}
+
+.titles p {
+  font-size: 0.875rem;
+  color: #151f29;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.form label[for="email"] {
+  display: none;
+}
+
+.form input,
+.form button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.form input {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  color: #969696;
+}
+
+.form button {
+  background-color: #4f7df3;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 1rem;
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 7px 0 rgba(79, 125, 243, 0.5);
+          box-shadow: 0px 5px 7px 0 rgba(79, 125, 243, 0.5);
+}
+
+.form button:hover {
+  background-color: #7096f5;
+}
+
+@media screen and (max-width: 550px) {
+  .form button {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social > a {
+  border-radius: 50%;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  padding: 0.375rem;
+}
+
+.footer .social a + a {
+  margin-left: 1rem;
+}
+
+.footer p {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  color: rgba(150, 150, 150, 0.5);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
+
 <body>
-  <div class="logo">
-    <img src="images/logo.svg" alt="">
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+
+    <div class="titles">
+      <h1>We are lauching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+    </div>
+
+    <form action="/" class="form">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Your email address...">
+      <button type="submit">Notify Me</button>
+    </form>
+
+    <div class="dashboard-img">
+      <img src="images/illustration-dashboard.png" alt="Dashboard Illustration">
+    </div>
+
+    <footer class="footer">
+      <div class="social">
+        <a class="social__facebook" href="https://facebook.com"><img src="https://img.icons8.com/material-outlined/16/4f7df3/facebook-f.png" /></a>
+        <a class="social__twitter" href="https://twiiter.com"><img src="https://img.icons8.com/small/16/4f7df3/twitter.png" /></a>
+        <a class="social__instagram" href="https://instagram.com"><img src="https://img.icons8.com/material-outlined/16/4f7df3/instagram-new.png" /></a>
+      </div>
+
+      <p>Copyright Ping. All rights reserved.</p>
+    </footer>
   </div>
-
-<div class="titles">
-  <h1>We are lauching <span>soon!</span></h1>
-  <p>Subscribe and get notified</p>
-</div>
-
-<form action="/" class="form">
-  <label for="email">Email</label>
-  <input type="email" name="email" id="email" placeholder="Your email address...">
-  <button type="submit">Notify Me</button>
-</form>
-
-<div class="dashboard-img">
-  <img src="images/illustration-dashboard.png" alt="">
-</div>
-
-<footer class="footer">
-  <div class="social">
-    <div class="social__facebook"><img src="https://img.icons8.com/material-outlined/24/000000/facebook-f.png"/></div>
-    <div class="social__twitter"><img src="https://img.icons8.com/small/24/000000/twitter.png"/></div>
-    <div class="social__instagram"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png"/></div>
-  </div>
-
-  <p>Copyright Ping. All rights reserved.</p>
-</footer>
 </body>
+
 </html>
