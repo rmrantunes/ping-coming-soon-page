@@ -22,10 +22,11 @@
       <p>Subscribe and get notified</p>
     </div>
 
-    <form action="/" class="form">
+    <form action="/" class="form" id="form">
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Your email address...">
-      <p class="error-msg">Please provide a valid email address</p>
+      <input type="email" name="email" id="email" autocapitalize="none" autocomplete="off" autocorrect="off" required
+      pattern="[^@]+@[^\.]+\..+" placeholder="Your email address...">
+      <div class="error-msg"></div>
       <button type="submit">Notify Me</button>
     </form>
 
@@ -43,6 +44,7 @@
       <p>Copyright Ping. All rights reserved.</p>
     </footer>
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>

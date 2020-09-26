@@ -14,12 +14,12 @@ const init = () => {
   const formElement = document.querySelector("#form");
   const errorMsg = document.querySelector(".error-msg");
   const validationRegex = new RegExp(
-    emailElement.getAttribute("patern") || "[^@]+@[^.]+..+",
+    emailElement.getAttribute("pattern") || "[^@]+@[^.]+..+",
     "i",
   );
 
   emailElement.removeAttribute("required");
-  emailElement.removeAttribute("patern");
+  emailElement.removeAttribute("pattern");
   formElement.setAttribute("novalidate", "");
 
   formElement.addEventListener("submit", (event) => {

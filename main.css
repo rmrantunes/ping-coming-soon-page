@@ -70,8 +70,15 @@ img {
   bottom: -1.25rem;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #ff5263;
   font-style: italic;
+}
+
+.form .error-msg .alert[data-state="error"] {
+  color: #ff5263;
+}
+
+.form .error-msg .alert[data-state="success"] {
+  color: #38b74e;
 }
 
 @media screen and (max-width: 550px) {
@@ -102,6 +109,10 @@ img {
           flex: auto;
   border: 1px solid rgba(150, 150, 150, 0.5);
   color: #969696;
+}
+
+.form input.error {
+  border-color: #ff5263;
 }
 
 .form button {

@@ -65,8 +65,15 @@ img {
 
     font-size: 0.75rem;
     font-weight: 600;
-    color: $light-red;
     font-style: italic;
+
+    .alert[data-state="error"] {
+      color: $light-red;
+    }
+
+    .alert[data-state="success"] {
+      color: $light-green;
+    }
 
     @include mobile {
       position: static;
@@ -94,6 +101,10 @@ img {
     flex: auto;
     border: 1px solid $gray-transparent;
     color: $gray;
+
+    &.error {
+      border-color: $light-red;
+    }
   }
 
   button {
