@@ -1,7 +1,7 @@
 const renderAlert = (state = "error") => {
   const messages = {
     error: "<b>Please provide a valid email address</b>",
-    success: "<b>Yay, we just send you a email!</b>",
+    success: "<b>Yay, we just send you an email!</b>",
   };
 
   return `
