@@ -108,6 +108,10 @@ img {
   color: #ff5263;
 }
 
+.form div.alert .error-msg[data-state="empty"] {
+  color: #ff8352;
+}
+
 .form div.alert .error-msg[data-state="success"] {
   color: #38b74e;
 }

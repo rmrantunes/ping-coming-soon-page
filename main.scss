@@ -70,16 +70,16 @@ img {
 
     .error-msg {
       animation: errorMsg 0.5s ease;
+      &[data-state="error"] {
+        color: $light-red;
+      }
+      &[data-state="empty"] {
+        color: $light-orange;
+      }
+      &[data-state="success"] {
+        color: $light-green;
+      }
     }
-
-    .error-msg[data-state="error"] {
-      color: $light-red;
-    }
-
-    .error-msg[data-state="success"] {
-      color: $light-green;
-    }
-
     @include mobile {
       position: static;
       left: auto;
