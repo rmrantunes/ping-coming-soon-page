@@ -112,9 +112,10 @@ img {
     flex: auto;
     border: 1px solid $gray-transparent;
     color: $gray;
+    font-weight: 600;
 
     &.error {
-      border-color: $light-red;
+      border: 2px solid $light-red;
     }
   }
 

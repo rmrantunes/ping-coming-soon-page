@@ -149,10 +149,11 @@ img {
           flex: auto;
   border: 1px solid rgba(150, 150, 150, 0.5);
   color: #969696;
+  font-weight: 600;
 }
 
 .form input.error {
-  border-color: #ff5263;
+  border: 2px solid #ff5263;
 }
 
 .form button {
