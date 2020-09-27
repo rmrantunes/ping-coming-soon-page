@@ -2,6 +2,32 @@
   font-size: 20px;
 }
 
+@-webkit-keyframes errorMsg {
+  from {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes errorMsg {
+  from {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +97,11 @@ img {
   font-size: 0.75rem;
   font-weight: 600;
   font-style: italic;
+}
+
+.form div.alert .error-msg {
+  -webkit-animation: errorMsg 0.5s ease;
+          animation: errorMsg 0.5s ease;
 }
 
 .form div.alert .error-msg[data-state="error"] {

@@ -1,0 +1,9 @@
+@keyframes errorMsg {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
